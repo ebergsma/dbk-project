@@ -1,0 +1,29 @@
+$primary-color: #0066ff;
+$font: "Lato","Trebuchet MS",Arial,Helvetica,sans-serif;
+$text-color: #000;
+$padding-distance: 20px;
+$white: #ffffff;
+
+
+body, html {
+	background-color: $white;
+    color: #333;
+    font-family: $font;
+    font-size: 14px;
+    line-height: 140%;
+	padding: $padding-distance;
+}
+
+/*
+// deze styling maakt de inputs wel mooier, maar verknoeit de layout. Vandaar uitgeschakeld.
+input{
+	padding: 1px;
+	border: solid 1px $white;
+	box-shadow: inset 1px 1px 2px 0 #707070;
+	transition: box-shadow 0.3s;
+}
+
+input.focus{
+	box-shadow: inset 1px 1px 2px 0 #c9c9c9;
+}
+*/
