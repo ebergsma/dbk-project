@@ -15,7 +15,6 @@
     }
     if (isset($_SESSION['postdata'])) {
         $_POST = $_SESSION['postdata'];
-        //unset($_SESSION['postdata']);
     }
     
     /*
@@ -60,6 +59,9 @@
         $values = getFormValues($dbc, false);
         include('./templates/tpl_resultaat.php');
     } else {
+		if (isset($_SESSION['postdata'])) {
+			unset($_SESSION['postdata']);
+		}	
         $statement = $dbc->prepare(
             'select date_created'
             . ' from gemaakte_berekeningen order by id DESC limit 0,1'
