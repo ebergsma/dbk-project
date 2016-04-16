@@ -5,4 +5,7 @@
 	$options = array();
 
 	$dbc = new PDO($dsn, $username, $password, $options);
-	$dbc->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+	$dbc->setAttribute(
+		PDO::ATTR_ERRMODE,
+		PDO::ERRMODE_EXCEPTION
+	);
